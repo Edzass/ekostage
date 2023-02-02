@@ -1,0 +1,182 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js">   </script>
+        <meta charset="utf-8">
+       <title>TehnoTips- Windows 11 Window</title>
+        <link rel="icon" type="image/x-icon" href="Ttips.jpg"> <! -- Cilnes mazā bilde ––>
+
+        <link rel="stylesheet" href="style.css">
+    <style>
+          header {
+        background-color: blue;
+        padding: 1px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+    }
+    footer {
+        background-color: chartreuse;
+        padding: 10px;
+        text-align: left;
+        color: black;
+    }
+
+ body{
+            background-color: rgb(1, 254, 255); /* fona krāsa*/
+        }
+        
+        .dotted {border-style: dotted;
+        padding: 25px 50px 75px 100px;}  /*attālums starp tekstu un malām*/
+        .solid {border-style: solid;} /* malu veids(class) */
+
+        .center {text-align: center;} /* Teksta izvietijuma veids- centrēts (klase)*/
+
+    .bl1 {
+        background-color: Aqua;
+        border-radius: 11px;
+    }
+    .c4{
+        background-color: red;
+        padding: 2px;
+        width: 300px;
+    }
+    
+    .all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.browser {
+  background: rgb(222, 238, 233);
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+    </style>
+    <script>
+
+        let x = 100;
+        let y = 100;
+        let atrumsy = 0;
+        let atrumsx = 10;
+        
+        function cikls()
+        {
+            $("#bumba").css({top: y, left: x});
+            
+            y += atrumsy;
+            
+            if (y > window.innerHeight-40)
+                atrumsy = -atrumsy;
+            else
+                atrumsy++;
+                
+                
+            x += atrumsx;
+            
+            if (x > window.innerWidth - 40)
+                atrumsx = -atrumsx;
+                
+            if (x < 0)
+                atrumsx = -atrumsx;
+                
+        }
+        setInterval(cikls, 30);
+
+    </script>
+    </head>
+
+    <body>
+        
+        <h1 class="bl1 center solid"; >Apakšadaļas: Windows 11</h1>
+
+        <ul>
+            <li><a  href= "index.html">Sākumlapa</a></li>
+            <li><a href= "WhatcapWeb.html">Kas ir WhatcapWeb?</a></li>
+            
+
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn " style="color: blue;"> <u>Windows 11 sadaļas- viss par un ap Windows 11 </u></a>
+                <div class="dropdown-content">
+                    <a href="what-is-wind11.html"> Kas ir Windows 11? </a>
+                    <a class="active" href="wind11-install.html">Vienkāršākais veids, kā uzinstelēt Windows 11</a>
+                    <a href="Wind11req.html">Sistēmas prasības</a>
+                    <a href="how-to-wind11lv.html">Windows 11- Latviski</a>
+                </div>
+                
+            </li>
+
+            <li><a class="active" href= "Widows11window.html">Wind11 Sadaļas</a></li>
+
+            <li style="float:right; "><a style="color: rgb(82, 214, 82); border: black;" href="par">Par </a>
+            </li>
+        </ul>
+
+        
+        <img src="Bildes/Wind11.jpg" width="300" height="150" <br/><br/>
+
+        <article class="all-browsers">
+            <h1>Sadaļas:</h1>
+            <article class="browser">
+                <form method="get" action="/what-is-wind11.html">
+                    <button type="submit"; class="bl1";> <b> <i>   Kas ir Windows 11? &#9197</button> </i> </b> </div>
+                </form>
+            </article>
+            <article class="browser">
+                <form method="get" action="Wind11req.html">
+                    <button type="submit"; class="bl1 ";> <i> Windows 11 sistēmas prasības&#9197</button>
+                </form>
+            </article>
+            <article class="browser">
+                <form method="get" action="/how-to-wind11lv.html">
+                    <button type="submit"; class="bl1 ";> <i> Kā padarīt windows 11 latvisku?&#9197</button>
+                </form>
+            </article>
+            <article class="browser">
+                <form method="get" action="wind11-install.html">
+                    <button type="submit"; class="bl1 ";> <i> Vieglākais veids, kā uzinstelēt windows 11&#9197</button>
+                </form>
+            </article>
+            <article class="browser">
+            <form method="get" action="/index.html">
+                <button type="submit"; class="bl1 c4";> <i> Galvenās atšķirības starp Windows 10 un 11 &#9197 </i> </button>
+             </form>
+            </article>
+          </article>
+
+        
+
+
+        <div id='bumba'></div>
+
+        <br><br>
+        
+        
+
+        <p> <b> P.S. </b> Ar sarkano krāsojumu norādītās sadaļas vēl ir izstrādes stadijā un vēl/ vai nav pieejamas publiski.
+
+    </br></br></br></br></br></br></br>
+
+<footer>
+<small> <mark> Šī lapa ir veidota uz patiesu un faktiem balstītu informāciju.  </mark> </small>
+<small>  <i> <b> <ins> <abbr title="Pamatojoties uz juridisku informāciju."> Visas tiesības ir aizsargātas. </abbr> </ins> </b> </i>  </small>
+<small> <em>  <b> <q> <div style="text-align: left">   Latvija- 2022  </q> </b>  </em> </small>
+</footer>
+
+    </body>
+
+    
+</html>

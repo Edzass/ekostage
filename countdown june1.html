@@ -1,0 +1,63 @@
+<head>
+
+</head>
+<script>
+    // Set the target date as June 1
+    var targetDate = new Date("June 1, 2022 00:00:00");
+
+    // Update the countdown every 1 second
+    setInterval(function() {
+        // Get the current date
+        var currentDate = new Date();
+
+        // Calculate the time remaining until the target date
+        var remainingTime = targetDate - currentDate;
+
+        // Convert the remaining time to days, hours, minutes, and seconds
+        var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        // Display the countdown in the HTML element with id "countdown"
+        <div class="cone">
+            <div class="cone-top">document.getElementById("countdown").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds remaining until June 1, 2022";</div>
+    }, 1000);
+</div>
+</script>
+
+
+<style>
+    .cone {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.cone-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #4CAF50;
+}
+
+.cone-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+}
+    </style>
+</head>
+
+<div id="countdown"></div>
+    
+
