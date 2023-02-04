@@ -1,74 +1,84 @@
- <html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gaisma.css">
+  <title>Eko Stage- Gaisma</title>
+  <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
+  <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 
+</head>
+<body>
+  
+ <nav>
+  <div class="navLinks"><ul>
+    <li>
+      <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" >Eko <a style="font-family: Allerta Stencil; font-size: 45px;" >Stage
+                    </a> 
+   </li></ul> </a></div>
+   
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
     
-
-    <meta charset="utf-8">
-       <title>Kas ir HDD?</title> <!--- Cilnes virsraksts --->
-    <link rel="icon" type="image/x-icon; " href="Ttips.jpg"> <!--- Cilnes mazā bilde --->
-
-    <link rel="stylesheet" href="style.css">
-
-        <style>
-  header {
-        background-color: blue;
-        padding: 1px;
-        text-align: center;
-        font-size: 20px;
-        color: black;
-    }
-    footer {
-        background-color: chartreuse;
-        padding: 10px;
-        text-align: left;
-        color: black;
-    }
-
-
-        </style>
-    </head>
-    <body>
-
-
-        <h1 style="background-color:DodgerBlue; text-align:center; color:LightBlack;  padding: 25px;">Kas ir HDD?</h1>
-        
-        <ul>
-            <li><a  href= "index.html">Sākumlapa</a></li>
-            <li><a href= "WhatcapWeb.html">Kas ir WhatcapWeb?</a></li>
-            
-
-
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn " style="color: blue;"> <u>Windows 11 sadaļas- viss par un ap Windows 11 </u></a>
-                <div class="dropdown-content">
-                    <a href="what-is-wind11.html"> Kas ir Windows 11? </a>
-                    <a class="" href="wind11-install.html">Vienkāršākais veids, kā uzinstelēt Windows 11</a>
-                    <a href="Wind11req.html">Sistēmas prasības</a>
-                    <a href="how-to-wind11lv.html">Windows 11- Latviski</a>
-                </div>
-                
-            </li>
-
-            <li><a href= "Widows11window.html">Wind11 Sadaļas</a></li>
-
-            <li style="float:right; "><a style="color: rgb(82, 214, 82); border: black;" href="par">Par </a>
-            </li>
-        </ul>
-
-        <br>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3f2vdIHrkZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <li><a href= "Skana.html">Skaņa</a></li>
+       <li><a href= "Gaisma.html">Gaisma</a></li>
+       <li><a href= "Skatuve.html">Skatuve</a></li>
+       <li><a href= "eko.html">EKO</a></li>
        
+       <li><a href="par.html">Par mums</a></li>
+       
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+    <a  href= "index.html">Eko Stage</a>
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a  href= "Skana.html"></a>
+     <a  href= "Gaisma.html">Gaisma</a>
+     <a href= "Skatuve.html">Skatuve</a>
+     <a href="par.html">Par mums</a>
+     
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1>Gaisma</h1>
+       <p>Prožektoru noma, uzstādīšana un apkalpošana(konfigurēšana) un noteiktu laiku. 
+        <br>Patērētāji iegūst krāsainus, vizuāli izgaismotus objektus, skatuvi un.c.
+        <br>
+        Pakalpojuma cena ir atkarīga no izvēlētās tehnikas + ar/bez klātienes cilvēku uzstādīšanas un konfigurēšanas.
+        </p>
+       
+     </div>
+     <div class="column2">
+       <img src="https://cdn-icons-png.flaticon.com/512/9032/9032359.png" alt="banner" width="500px">
+     </div>
+   </div>
 
-
-
-        </br>
-
-    <small> <mark> Šī lapa ir veidota uz patiesu un faktiem balstītu informāciju.  </mark> </small>
-<small>  <i> <b> <ins> <abbr title="Pamatojoties uz juridisku informāciju."> Visas tiesības ir aizsargātas. </abbr> </ins> </b> </i>  </small>
-<small> <em> <del> <b> <q>   2021  </q> </b> </del> </em> </small>
-<abbr title="Ir 2022 gads">Kapēc?</abbr>
-<small> <em>  <b> <q> <div style="text-align: left">   Latvija- 2022  </q> </b>  </em> </small>
-
-
-
+   <footer>
+    <p id="footertext"></p>
+<small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
+<small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
+<small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
+</footer>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>

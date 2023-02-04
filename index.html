@@ -10,16 +10,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, inital-scale=1"> <! -- lapas pielagošana ierīcem -->
         <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
+        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
         
         <title>Eko Stage - Sākumlapa</title>
     <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
         <! -- <meta http-equiv="refresh" content="30"-->
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.java">
+    <skript src="./js/main_page.js"></skript>
     <link rel="stylesheet" href="css/btn1.css">
-    <link rel="stylesheet" href="css/btn2.css">
-    <link rel="stylesheet" href="css/btn3.css">
-    
+    <link rel="stylesheet" href="./css/btn2.css">
+    <link rel="stylesheet" href="./css/btn3.css">
+    <link rel="stylesheet" href="./css/main_page.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
 
         
@@ -156,10 +158,7 @@
         
         <br>
 
-        <aside>
-            <img id='zobrats' src="https://www.ambex.lv/bildes/zobrats.png">
-            <img id='zobrats2' src="https://www.ambex.lv/bildes/zobrats.png">
-        </aside>
+        
         <button onclick="scrollToBottom()">Ritināt uz leju</button>
        
 
@@ -299,16 +298,17 @@
             </div>
           </div>
           <!-- partial -->
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./script.js"></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./js/main_page.js"></script>
           
-
+  
 
         <h3>   <b id="rcorners1"  style="   background-color: lightblue;width: 150px;border: 10px solid blue;padding: 10px;margin: 10px; text-align: center; ">  <strong>Eko Stage ir SMU uzņēmums   </b></h3>
             <br> 
             <br>
 
 
-                
+
+
 
 <br/> <br/> <p class="dotted"; id="para2"> Čau!
 
@@ -318,7 +318,10 @@ Mani sauc Edgars un man ļoti interesē tehnaloģijas.
 <br/> <br/> </p></i> </stong></body>
 
 
-
+<button onclick="topFunction()" id="myBtn" title="Scroll to Top">
+  <!-- font awesome up arrow icon -->cdfvgbnm,
+  <i class="fas fa-angle-double-up">dfghjk</i> 
+</button>
 
 
 <div class="dropdown">
@@ -349,7 +352,8 @@ Mani sauc Edgars un man ļoti interesē tehnaloģijas.
 
 <p class="hover-1" style="font-size:50px; color:rgb(81, 255, 0); background-color:rgba(240, 184, 245, 0.082); font-family:courier; font-size:340%; text-align:center"><i>>Eko Stage  </p> </ins>  <! -- zem komandas stils teksta rīki- krāsa, fona krāsa, stils, centrēts teksts, slīpraksts, bold,  ––>
 
-<p class="hover" id="test1"></p>
+<p class="hover" id="test5"></p>
+
 
 <footer>
     <p id="footertext"></p>
@@ -360,6 +364,9 @@ Mani sauc Edgars un man ļoti interesē tehnaloģijas.
 
 
     <script>
+      document.getElementById("footertext").innerHTML = "TESTTTT";
+
+      <skript src="./js/main_page.js"></skript>
        $(document).ready(function(){
   $("#scroll-down").click(function(){
     $('html, body').animate({
@@ -368,18 +375,33 @@ Mani sauc Edgars un man ļoti interesē tehnaloģijas.
   });
 }); 
     
-function scrollToBottom() {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: 'smooth'
-  });
+
+
+
+document.getElementById("test5").innerHTML = "Teksts JavaScript.";
+
+
+//Get the Top button:
+mybutton = document.getElementById("myBtn");
+ 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+ scrollFunction();
+};
+ 
+function scrollFunction() {
+ if (document.body.scrollTop > 20 || document.documentElement.    scrollTop > 20) {
+    mybutton.style.display = "block";
+ } else {
+  mybutton.style.display = "none";
+ }
 }
-
-
-
-document.getElementById("test1").innerHTML = "Teksts JavaScript.";
-
-document.getElementById("footertext").innerHTML = "";
+ 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+ document.body.scrollTop = 0; // For Safari
+ document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
         </script>
 
