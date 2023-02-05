@@ -1,412 +1,227 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js">   </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSH68VKh8T5h4c+PJFGYm5jF="
-  crossorigin="anonymous"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1"> <! -- lapas pielagošana ierīcem -->
-        <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
-        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-        
-        <title>Eko Stage - Sākumlapa</title>
-    <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
-        <! -- <meta http-equiv="refresh" content="30"-->
-    <link rel="stylesheet" href="style.css">
-    <skript src="./js/main_page.js"></skript>
-    <link rel="stylesheet" href="css/btn1.css">
-    <link rel="stylesheet" href="./css/btn2.css">
-    <link rel="stylesheet" href="./css/btn3.css">
-    <link rel="stylesheet" href="./css/main_page.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    
-
-        
-    <style>
-       
-    header {
-        background-color: blue;
-        padding: 15px;
-        text-align: center;
-        font-size: 20px;
-        color: black;
-    }
-    footer {
-        background-color: chartreuse;
-        padding: 10px;
-        text-align: left;
-        color: black;
-    }
-        
-    p.dotted {border-style: dotted; padding: 25px 50px 75px 100px;}  /*attālums starp tekstu un malām*/
-    p.solid {border-style: solid;} /* malu veids(class) */
-
-    .center {text-align: center;} /* Teksta izvietijuma veids- centrēts (klase)*/
-
-    #para1 {
-    color: red;
-    text-align: center;
-    background-image: url("Bildes/paper2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    }
-    
-
-    #para2 {
-        color:blue;
-        text-align: center;
-        background-image: url("Bildes/paper1.jpg");
-
-    }
-
-    #para3 {
-        color: green;
-        text-align: center;
-        background-image: url("Bildes/paper1.jpg");
-    }
-    #rcorners1 {
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 20px; 
-    width: 200px;
-    height: 150px;  
-    }
-
-#rcorners2 {
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
-}
-
-#rcorners3 {
-  border-radius: 25px;
-  background: url(Bildes/paper.gif);
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
-}
-
-    div img {
-    opacity: 0.5;
-    }
-
-    div img:hover {
-    opacity: 1.0; }
-    
-    aside {
-    width: 33%;
-    padding-left: 50  px;
-    margin-left: 30px;
-    float: right;
-    font-style: italic;
-    background-color: rgb(238, 241, 235);
-    }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gaisma.css">
+  <title>Eko Stage- EKO</title>
+  <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
+  <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/main_page.css">
+  <link rel="stylesheet" href="styl.css">
+  <style>
+    body {
+    background-image: linear-gradient(to right, rgba(11, 138, 211, 0.336), rgba(197, 63, 238, 0.349)), url(https://images.unsplash.com/photo-1576514129883-2f1d47a65da6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RhZ2UlMjBsaWdodHN8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
+</style>
+</head>
+<body>
+  
+ <nav>
+  <div class="navLinks"><ul>
+    <li>
+      <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" >Eko <a style="font-family: Allerta Stencil; font-size: 45px; color: black;" href="index.html" >Stage
+                    </a> 
+   </li></ul> </a></div>
    
-    </style>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
     
-    </head>
-
-    <body>
-        
-    
-        <header>
-         <h1 style="background-color:DodgerBlue; text-align:center; color:LightBlack;  padding: 25px;"> <div class="">
-            <div class="typing-effect">
-        Eko stage
-            </div>
-        </div>Eko Stage Sākumlapa</h1>  
-        </header>
-
-        <nav>
-
-            <ul>
-                <li><a class="" id="btn1-2" href= "index.html">Sākumlapa</a></li>
-                <li><a class="hvr-overlay-from-bottom" href= "Skana.html">Skaņa</a></li>
-                <li><a class="hvr-overlay-from-bottom" href= "Gaisma.html">Gaisma</a></li>
-                <li><a class="hvr-overlay-from-bottom" href= "Skatuve.html">Skatuve</a></li>
-            
-                
-                <li class="dropdown">
-                    <a class="hvr-glow" id="btn1-6" href="javascript:void(0)" class="dropbtn" style="color: rgb(10, 238, 79);"> <u><b>-- </b></u></a>
-                    <div class="dropdown-content">
-                        <a class="hvr-overlay-from-left" href="hdd.html"> Kas ir HDD? </a>
-                        <a class="hvr-overlay-from-left" href="ssd.html">Kas ir SSD?</a>
-
-                    </div>
-                    </li>
-
-                <li><a class="hvr-overlay-from-bottom" style="color: rgb(10, 238, 79);" href= "climate-change.html"><b>Klimata pārmiņas</b></a></li>
-            
-            
-            
-                <li><a class="hvr-overlay-from-bottom" style="float:right; text-align: right;" href= "par.html">Par mums</a></li>
-               
-                
-                  
-            </ul>
-        </nav> 
-          
-
-        
-        <br>
-
-        
-        <button onclick="scrollToBottom()">Ritināt uz leju</button>
+       <li><a href= "Skana.html">Skaņa</a></li>
+       <li><a href= "Gaisma.html">Gaisma</a></li>
+       <li><a href= "Skatuve.html">Skatuve</a></li>
+       <li><a href= "eko.html">EKO</a></li>
        
-
-         <div class="dropdown">
-                <img src="Bildes/logo11.png" alt="Pamata bilde" width="250" height="125">
-                <div class="dropdown-content">
-                    <img src="Bildes/logo1.png" alt="Pamata bilde1" width="auto" height="auto">
-                    <div class="desc"> Bildes apraksts </div>
-             </div>
-            </div>
-
-            <br/>
-            <img id='zvans' src='Bildes/logo1.png'>
-           
-            
-    
-      
-
-        <div class="container">
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="Bildes/speaker.png">
-                        <h3>Skaņa</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                            <b href="Skana.html">Read More</b>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="Bildes/spotlight.png">
-                        <h3>Gaisma</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                            <b href="Gaisma.html">Read More</b>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="Bildes/stage.png">
-                        <h3>Skatuve</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                            <b href="Skatuve.html">Read More</b>
-                    </div>
-                </div>
+       <li><a href="par.html">Par mums</a></li>
+       
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+    <a  href= "index.html">Eko Stage</a>
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a  href= "Skana.html"></a>
+     <a  href= "Gaisma.html">Gaisma</a>
+     <a href= "Skatuve.html">Skatuve</a>
+     <a href="par.html">Par mums</a>
+     
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1></h1>
+       <p>Gaismošanas, skaņošanas un skatuves aprīkojuma nomas SMU uzņēmums “Eko stage” 
+        <br> Šis uzņēmums ir atšķirīgs ar galveno mērķi samazināt dabas pēdas nospiedumu veidojot(apgaismojot, apskaņojot, veidojot skatuvi) un organizējot pasākumus.
+        </p>
+       
+     </div>
+     <div class="column2">
+       <img src="Bildes/logo1.png" alt="banner" width="300px ">
+     </div>
+   </div>
+   <div class="container">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="Bildes/speaker.png">
+                <h3>Skaņa</h3>
             </div>
         </div>
-        <br/><br/>
-        
-        <div class="slider" x-data="{start: true, end: false}">
-            <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1599422314077-f4dfdaa4cd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1608501821300-4f99e58bba77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxhYnN0cmFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1608501821300-4f99e58bba77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxhYnN0cmFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
-                <div class="slider__info">
-                  <h2>This is a card</h2>
-                </div>
-              </div>
+        <div class="face face2">
+            <div class="content">
+                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <a href="Skana.html">Lasīt vairāk</a>
             </div>
-            <div class="slider__nav">
-              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
-              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="Bildes/spotlight.png">
+                <h3>Gaisma</h3>
             </div>
-          </div>
-          <!-- partial -->
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./js/main_page.js"></script>
-          
-  
-
-        <h3>   <b id="rcorners1"  style="   background-color: lightblue;width: 150px;border: 10px solid blue;padding: 10px;margin: 10px; text-align: center; ">  <strong>Eko Stage ir SMU uzņēmums   </b></h3>
-            <br> 
-            <br>
-
-
-
-
-
-<br/> <br/> <p class="dotted"; id="para2"> Čau!
-
-Mani sauc Edgars un man ļoti interesē tehnaloģijas.
-</p>
-<br/> <br/> <p class="dotted"; id="para3"> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin porttitor lacus eu ipsum dictum facilisis. Vestibulum ante magna, interdum eget suscipit in, sagittis non neque. Praesent a arcu augue. Praesent fringilla dignissim diam eu consequat. Maecenas non nunc quis sem consectetur ultricies quis sit amet tellus. Nam vitae tincidunt tellus. Sed id tellus id nunc rhoncus ultrices sit amet eu odio. Nulla in ligula vestibulum, ultricies est tristique, volutpat mi. Vivamus varius pretium nibh, id porttitor odio molestie vitae. Mauris a sagittis lacus.<p/>
-<br/> <br/> </p></i> </stong></body>
-
-
-<button onclick="topFunction()" id="myBtn" title="Scroll to Top">
-  <!-- font awesome up arrow icon -->cdfvgbnm,
-  <i class="fas fa-angle-double-up">dfghjk</i> 
-</button>
-
-
-<div class="dropdown">
-    <span>Tehno</span>
-    <div class="dropdown-content">
-        <p><b>Hello</b></p>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <a href="Gaisma.html">Lasīt vairāk</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="Bildes/stage.png">
+                <h3>Skatuve</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <a href="Skatuve.html">Lasīt vairāk</a>
+            </div>
+        </div>
     </div>
 </div>
- &#128513
+<br/><br/>
 
- <div class="dropdown">
-    <button class="dropbtn">Tehno</button>
-    <div class="dropdown-content">
-        <a herf="#">Link1</a>
-        <a herf="#">Link2</a>
-        <a herf="#">Link3</a>
+<h1 style="text-align: center;">
+  Mūsu nomas piedāvājumā esošā tehnika:
+</h1> <br>
+
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/AMERICAN_DJ/Hydro_Profile-4000x4000.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>AMERICAN DJ Hydro Profile</h2>
+      </div>
     </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/ADJ/Hydro_Wash_X19-4000x4000.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>ADJ Hydro Wash X19</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/DB_TECHNOLOGIES/DVX_D12_HP-4000x4000.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>DVX D12 HP</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://www.prolights.it/images/tmp/1200x630AVOARENA_18118.png?20180730175629" alt="Image">
+      <div class="slider__info">
+        <h2>Avolites Arena</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/ALLEN_and_HEATH/QU-32-4000x4000w.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>ALLEN & HEATH QU-32</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/DB_TECHNOLOGIES/Flexsys_FMX10-4000x4000w.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>DB TECHNOLOGIES FMX10</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/SHURE/BLX24RE/SM58_K14-4000x4000w.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>SHURE BLX24RE/SM58 K14</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/SHURE/BLX14E/SM31_K14-4000x4000w.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>SHURE BLX14E/SM31 K14</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/RODE/NT5MP-4000x4000.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>RODE NT5MP</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/Sennheiser/e_945-4000x4000.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>SENNHEISER e 945</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/508758/15788610_800.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Stairville LED Pixel Rail 40 RGB</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/508758/15788610_800.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Stairville LED Pixel Rail 40 RGB</h2>
+      </div>
+    </div>
+  </div>
+  <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+  </div>
 </div>
- &#128513<br>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./js/main_page.js"></script>
 
 
-</br>
-</br><br></br> 
-  <br>
-  <br>
-
-<p id="demo2"></p>
-
-<p class="hover-1" style="font-size:50px; color:rgb(81, 255, 0); background-color:rgba(240, 184, 245, 0.082); font-family:courier; font-size:340%; text-align:center"><i>>Eko Stage  </p> </ins>  <! -- zem komandas stils teksta rīki- krāsa, fona krāsa, stils, centrēts teksts, slīpraksts, bold,  ––>
-
-<p class="hover" id="test5"></p>
 
 
-<footer>
+   <footer>
     <p id="footertext"></p>
 <small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
 <small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
 <small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
 </footer>
-
-
-    <script>
-      document.getElementById("footertext").innerHTML = "TESTTTT";
-
-      <skript src="./js/main_page.js"></skript>
-       $(document).ready(function(){
-  $("#scroll-down").click(function(){
-    $('html, body').animate({
-        scrollTop: $("#bottom-of-page").offset().top
-    }, 2000);
-  });
-}); 
-    
-
-
-
-document.getElementById("test5").innerHTML = "Teksts JavaScript.";
-
-
-//Get the Top button:
-mybutton = document.getElementById("myBtn");
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
  
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
- scrollFunction();
-};
- 
-function scrollFunction() {
- if (document.body.scrollTop > 20 || document.documentElement.    scrollTop > 20) {
-    mybutton.style.display = "block";
- } else {
-  mybutton.style.display = "none";
- }
-}
- 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
- document.body.scrollTop = 0; // For Safari
- document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-        </script>
-
-    </body>
-
-
-    
+</body>
 </html>

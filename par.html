@@ -1,143 +1,165 @@
- <!DOCTYPE html>
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gaisma.css">
+  <title>Eko Stage- Skaņa</title>
+  <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
+  <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 
-    
-
-    <meta charset="utf-8">
-       <title>Eko Stage- PAR</title> <!--- Cilnes virsraksts --->
-    <link rel="icon" type="image/x-icon; " href="Bildes/logo1.png"> <!--- Cilnes mazā bilde --->
-
-    <link rel="stylesheet" href="css/btn1.css">
-    <link rel="stylesheet" href="./css/btn2.css">
-    <link rel="stylesheet" href="./css/btn3.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="./js/about.js">
+  <link rel="script" href="./js/about.js">
     <link rel="stylesheet" href="./css/par_css.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed'>
 
-        <style>
-  header {
-        background-color: blue;
-        padding: 1px;
-        text-align: center;
-        font-size: 20px;
-        color: black;
-    }
-    footer {
-        background-color: chartreuse;
-        padding: 10px;
-        text-align: left;
-        color: black;
-    }
+<style>
+    body {
+    background-image: linear-gradient(to right, rgba(200, 8,207, 0.75), rgba(28, 70, 184, 0.8)), url(https://www.eventproductionnetwork.org/wp-content/uploads/2015/11/rsn-stage-lights.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
 
 
-        </style>
-    </head>
-    <body>
+</style>
+</head>
+<body>
+  
+ <nav>
+  <div class="navLinks"><ul>
+    <li>
+      <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" >Eko <a style="font-family: Allerta Stencil; font-size: 45px; color: black;" href="index.html" >Stage
+                    </a> 
+   </li></ul> </a></div>
+   
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+    
+       <li><a href= "Skana.html">Skaņa</a></li>
+       <li><a href= "Gaisma.html">Gaisma</a></li>
+       <li><a href= "Skatuve.html">Skatuve</a></li>
+       <li><a href= "eko.html">EKO</a></li>
+       
+       <li><a href="par.html">Par mums</a></li>
+       
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+    <a  href= "index.html">Eko Stage</a>
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a  href= "Skana.html"></a>
+     <a  href= "Gaisma.html">Gaisma</a>
+     <a href= "Skatuve.html">Skatuve</a>
+     <a href="par.html">Par mums</a>
+     
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1>Par</h1>
+       <p>
+       <br>
 
-
-        <h1 style="background-color:DodgerBlue; text-align:center; color:LightBlack;  padding: 25px;">Eko Stage - PAR MUMS</h1>
-        
-        <nav>
-
-          <ul>
-              <li><a class=""  href= "index.html">Sākumlapa</a></li>
-              <li><a class="hvr-overlay-from-bottom" href= "Skana.html">Skaņa</a></li>
-              <li><a class="hvr-overlay-from-bottom" href= "Gaisma.html">Gaisma</a></li>
-              <li><a class="hvr-overlay-from-bottom" href= "Skatuve.html">Skatuve</a></li>
-          
-              
-              
-
-              <li><a class="hvr-overlay-from-bottom" style="color: rgb(10, 238, 79);" href= "climate-change.html"><b>Klimata pārmiņas</b></a></li>
-          
-          
-          
-              <li><a class="hvr-overlay-from-bottom" id="btn1-2" style="float:right; text-align: right;" href= "par.html">Par mums</a></li>
-             
-              
-                
-          </ul>
-      </nav> 
-        
-
-
-        <p class="center" > <em> Teksts </em> <p>
+        </p>
+       
+     </div>
+     <div class="column2">
+       <img src="" alt="banner" width="500px">
+     </div>
+   </div>
+  
 
          
-          <!-- partial:index.partial.html -->
-          <div class="contact-area">
-            <div class="contact">
-              <main>
-                <section>
-                  <div class="content">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
-          
-                    <aside>
-                      <h1> Edgars Mukāns</h1>
-                      <p>Uzņēmuma dibinātājs, vadītājs. Vada uzņēmumu, pārzin visu tehnikas aprīkojumu un veido budžetu. </p>
-                    </aside>
-                    
-                    <button >
-                      <span>Contact Me</span>
-                      
-                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
-                    </button>
-                  </div>
-          
-                  <div class="title"><p>Contact Me</p></div>
-                </section>
-          
+    <!-- partial:index.partial.html -->
+    <div class="contact-area">
+      <div class="contact">
+        <main>
+          <section>
+            <div class="content">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
+    
+              <aside>
+                <h1> Edgars Mukāns</h1>
+                <p>Uzņēmuma dibinātājs, vadītājs. Vada uzņēmumu, pārzin visu tehnikas aprīkojumu un veido budžetu. </p>
+              </aside>
+              
+              <button >
+                <span>Contact Me</span>
                 
-              </main>
-          
-
-              <nav>
-                <a href="#" class="gmail">
-                  <div class="icon">
-                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
-                  </div>
-          
-                  <div class="content">
-                    <h1>Email</h1>
-                    <span>ekostage@outlook.com</span>
-                  </div>
-                  
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                </a>
-          
-                <a href="#" class="facebook">
-                  <div class="icon">
-                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="" fill-rule="nonzero"/></svg>
-                  </div>
-          
-                  <div class="content">
-                    <h1>Tālrunis</h1>
-                    <span>25515627</span>
-                  </div>
-                  
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                </a>
-          
-              </nav>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
+              </button>
             </div>
-          </div>
-          <!-- partial -->
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./js/about.js"></script>
+    
+            <div class="title"><p>Contact Me</p></div>
+          </section>
+    
           
-         
+        </main>
+    
+
+        <nav>
+          <a href="#" class="gmail">
+            <div class="icon">
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
+            </div>
+    
+            <div class="content">
+              <h1>Email</h1>
+              <span>ekostage@outlook.com</span>
+            </div>
+            
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+          </a>
+    
+          <a href="#" class="facebook">
+            <div class="icon">
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="" fill-rule="nonzero"/></svg>
+            </div>
+    
+            <div class="content">
+              <h1>Tālrunis</h1>
+              <span>25515627</span>
+            </div>
+            
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+          </a>
+    
+        </nav>
+      </div>
+    </div>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./js/about.js"></script>
+    
+   
 
 
-        </br>
+  </br>
 
-        <footer>
-          <p id="footertext"></p>
-      <small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
-      <small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
-      <small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
-      </footer>
-
-
-
-    </body>
+   <footer>
+    <p id="footertext"></p>
+<small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
+<small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
+<small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
+</footer>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>

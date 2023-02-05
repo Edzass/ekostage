@@ -1,120 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-       <title>Eko Stage- Skaņa</title>
-    <link rel="icon" type="image/x-icon; " href="Bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/btn1.css">
-    <link rel="stylesheet" href="./css/btn2.css">
-    <link rel="stylesheet" href="./css/btn3.css">
-
-
-    
-    <style>
-          header {
-        background-color: blue;
-        padding: 1px;
-        text-align: center;
-        font-size: 20px;
-        color: black;
-    }
-    footer {
-        background-color: chartreuse;
-        padding: 10px;
-        text-align: left;
-        color: black;
-    }
-      
-        
-            p.dotted {border-style: dotted;
-            padding: 25px 50px 75px 100px;}  /*attālums starp tekstu un malām*/
-            p.solid {border-style: solid;} /* malu veids(class) */
-
-            .center {text-align: center;} /* Teksta izvietijuma veids- centrēts (klase)*/
-
-    #para1 {
-    color: red;
-    text-align: center;
-    background-image: url("Bildes/paper1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-    
-
-    #para2 {
-        color:blue;
-        text-align: center;
-        background-image: url("Bildes/paper1.jpg");
-
-    }
-
-    #para3 {
-        color: green;
-        text-align: center;
-        background-image: url("Bildes/paper1.jpg");
-    }
-
-    div img {
-    opacity: 0.5;
-    }
-
-    div img:hover {
-    opacity: 1.0; }
-    
-    </style>
-    </head>
-
-    <body>
-        
-    
-        
-        <h1 style="background-color:DodgerBlue; text-align:center; color:LightBlack;  padding: 25px;">Eko Stage- Skaņa</h1>  
-        <nav>
-
-            <ul>
-                <li><a class=""  href= "index.html">Sākumlapa</a></li>
-                <li><a class="hvr-overlay-from-bottom" id="btn1-2" href= "Skana.html">Skaņa</a></li>
-                <li><a class="hvr-overlay-from-bottom" href= "Gaisma.html">Gaisma</a></li>
-                <li><a class="hvr-overlay-from-bottom" href= "Skatuve.html">Skatuve</a></li>
-            
-                
-                <li class="dropdown">
-                    <a class="hvr-glow" id="btn1-6" href="javascript:void(0)" class="dropbtn" style="color: rgb(10, 238, 79);"> <u><b>-- </b></u></a>
-                    <div class="dropdown-content">
-                        <a class="hvr-overlay-from-left" href="hdd.html"> Kas ir HDD? </a>
-                        <a class="hvr-overlay-from-left" href="ssd.html">Kas ir SSD?</a>
-
-                    </div>
-                    </li>
-
-                <li><a class="hvr-overlay-from-bottom" style="color: rgb(10, 238, 79);" href= "climate-change.html"><b>Klimata pārmiņas</b></a></li>
-            
-            
-            
-                <li><a class="hvr-overlay-from-bottom" style="float:right; text-align: right;" href= "par.html">Par mums</a></li>
-               
-                
-                  
-            </ul>
-        </nav> 
-          
-
-        <a href style="border:2px solid DodgerBlue;" ="https://lv.wikipedia.org">Wind11 Latviski</a> <br/><br/>
-
-        
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gaisma.css">
+  <title>Eko Stage- Skaņa</title>
+  <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
+  <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<style>
+    body {
+    background-image: linear-gradient(to right, rgba(200, 8,207, 0.75), rgba(28, 70, 184, 0.8)), url(https://www.allstaraudio.com/wp-content/uploads/2017/07/stage-setup-810x456.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
+</style>
+</head>
+<body>
   
-        <br/><br/>
-     
-    <footer>
-<small> <mark> Šī lapa ir veidota uz patiesu un faktiem balstītu informāciju.  </mark> </small>
-<small>  <i> <b> <ins> <abbr title="Pamatojoties uz juridisku informāciju."> Visas tiesības ir aizsargātas. </abbr> </ins> </b> </i>  </small>
-
-<small> <em>  <b> <q> <div style="text-align: left">   Latvija- 2022  </q> </b>  </em> </small>
-</footer>
-    </body>
-
+ <nav>
+  <div class="navLinks"><ul>
+    <li>
+      <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" >Eko <a style="font-family: Allerta Stencil; font-size: 45px; color: black;" href="index.html" >Stage
+                    </a> 
+   </li></ul> </a></div>
+   
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
     
+       <li><a href= "Skana.html">Skaņa</a></li>
+       <li><a href= "Gaisma.html">Gaisma</a></li>
+       <li><a href= "Skatuve.html">Skatuve</a></li>
+       <li><a href= "eko.html">EKO</a></li>
+       
+       <li><a href="par.html">Par mums</a></li>
+       
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+    <a  href= "index.html">Eko Stage</a>
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a  href= "Skana.html"></a>
+     <a  href= "Gaisma.html">Gaisma</a>
+     <a href= "Skatuve.html">Skatuve</a>
+     <a href="par.html">Par mums</a>
+     
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1>Skaņa</h1>
+       <p>Skaņas tehnikas noma, uzstādīšana un apkalpošana(konfigurēšana) uz noteiku laiku- pasākumu. 
+       <br>Patērētāji iegūst apskaņotu pasākumu vai objektu. 
+       <br>     Pakalpojuma cena ir atkarīga no izvēlētās tehnikas + ar/bez klātienes cilvēku uzstādīšanas un konfigurēšanas.
+
+        </p>
+       
+     </div>
+     <div class="column2">
+       <img src="https://cdn-icons-png.flaticon.com/512/1411/1411126.png" alt="banner" width="500px">
+     </div>
+   </div>
+
+   <footer>
+    <p id="footertext"></p>
+<small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
+<small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
+<small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
+</footer>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
 </html>

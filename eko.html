@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gaisma.css">
+  <title>Eko Stage- EKO</title>
+  <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
+  <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <style>
+    body {
+    background-image: linear-gradient(to right, rgba(8, 207, 58, 0.75), rgba(63, 133, 238, 0.555)), url(https://upload.wikimedia.org/wikipedia/commons/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
+</style>
+</head>
+<body>
+  
+ <nav>
+  <div class="navLinks"><ul>
+    <li>
+      <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" >Eko <a style="font-family: Allerta Stencil; font-size: 45px; color: black;" href="index.html" >Stage
+                    </a> 
+   </li></ul> </a></div>
+   
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+    
+       <li><a href= "Skana.html">Skaņa</a></li>
+       <li><a href= "Gaisma.html">Gaisma</a></li>
+       <li><a href= "Skatuve.html">Skatuve</a></li>
+       <li><a href= "eko.html">EKO</a></li>
+       
+       <li><a href="par.html">Par mums</a></li>
+       
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+    <a  href= "index.html">Eko Stage</a>
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a  href= "Skana.html"></a>
+     <a  href= "Gaisma.html">Gaisma</a>
+     <a href= "Skatuve.html">Skatuve</a>
+     <a href="par.html">Par mums</a>
+     
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1>Dabai draudzīgums</h1>
+       <p>Uzņēmuma mērķis ir samaināt cilvēku radīto ietekmi uz dabu dažādu pasākumu (cilvēku izklaides nolūku) norises laikā.
+        <br> Zem uzņēmuma saukļa ”Eko ” slēpjas tikai energoefektīvu mūsdienīgu ierīču lietošana, tehnikas transports neatslājot oglekļa dioksīdu, elektroenerģijas ieguve izmantojot tikai atjaunojamus dabas resursus- ūdeņradi, kas iegūts elektrolizējot ūdeni- izmantojot saules saražoto elektroenerģiju.
+        </p>
+       
+     </div>
+     <div class="column2">
+       <img src="https://cdn-icons-png.flaticon.com/512/1598/1598431.png" alt="banner" width="400px">
+     </div>
+   </div>
+
+   <footer>
+    <p id="footertext"></p>
+<small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
+<small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
+<small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
+</footer>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>

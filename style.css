@@ -215,57 +215,7 @@ opacity: 0.5;
 div img:hover {
 opacity: 1.0; }
 
-/* Zobratu animacija*/
-#zobrats
-{
-    width: 200px;
-    animation: zobratspalabi 5s linear infinite;
-    
-    }
-    
-@keyframes zobratspalabi
-{
-    0%{
-            transform: rotate(0deg);
-            
-            }
-    100%{
-            transform: rotate(360deg);
-            
-            }
-}
 
-#zobrats2
-{
-    width: 200px;
-    animation: zobratspakreisi 5s linear infinite;
-    position: relative;
-    left: -15px;
-    
-    
-}
-
-@keyframes zobratspakreisi
-{
-    0%{
-            transform: rotate(360deg);
-            
-            }
-    100%{
-            transform: rotate(0deg);
-            
-            }
-}
-#zvans 
-{
-    width: 200px;
-    
-    }
-    
-#zvans:hover
-{
- animation: zvanskustas .7s linear infinite;       
-}
 
 @keyframes zvanskustas
 {
@@ -436,7 +386,7 @@ opacity: 1.0; }
   }
 }
 /* hover effects*/
-.hover {
+.hover1 {
   --s: 0.1em; /* the thickness of the line */
 
   --c: #1095c1; /* any color */
