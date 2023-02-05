@@ -9,14 +9,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  body {
-    background-image: linear-gradient(to right, rgba(200, 8,207, 0.75), rgba(28, 70, 184, 0.8)), url(http://cdn.shopify.com/s/files/1/0336/3763/0092/articles/2021_08_9.jpg?v=1650323229);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-  }
+ 
   
   /* CONTACT
   ========================================== */
@@ -28,7 +21,7 @@
   
   .contact {
     position: relative;
-    max-width: 420px;
+    max-width: 620px;
     padding: 40px 20px;
     overflow: hidden;
     margin: 0 auto;

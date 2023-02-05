@@ -20,11 +20,14 @@
 
 
 .container{
-    width: 1000px;
+   
     position: relative;
     display: flex;
     justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 7%;
   
+ 
   }
   
   .container .card{
