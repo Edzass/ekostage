@@ -9,7 +9,8 @@
   <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
   <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-
+  <link rel="stylesheet" href="./css/main_page.css">
+  <link rel="stylesheet" href="styl.css">
 </head>
 <body>
   
@@ -64,7 +65,78 @@
        <img src="https://cdn-icons-png.flaticon.com/512/9032/9032359.png" alt="banner" width="500px">
      </div>
    </div>
+   
+   <h1 style="text-align: center;">
+    Mūsu nomas piedāvājumā esošā tehnika:
+  </h1> <br>
+  
+  <div class="slider" x-data="{start: true, end: false}">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/AMERICAN_DJ/Hydro_Profile-4000x4000.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>AMERICAN DJ Hydro Profile</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/ADJ/Hydro_Wash_X19-4000x4000.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>ADJ Hydro Wash X19</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/ADJ/Vizi_CMY_300-4000x4000.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>ADJ Vizi CMY 300</h2>
+        </div>
+      </div>
 
+      <div class="slider__item">
+        <img class="slider__image" src="https://www.prolights.it/images/tmp/1200x630AVOARENA_18118.png?20180730175629" alt="Image">
+        <div class="slider__info">
+          <h2>Avolites Arena</h2>
+        </div>
+      </div>
+    
+      <div class="slider__item">
+        <img class="slider__image" src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/508758/15788610_800.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>Stairville LED Pixel Rail 40 RGB</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/414200/12498152_800.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>Stairville RevueLED 120 COB RGB</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/469056/15364372_800.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>Stairville CX-60 HEX Tourpack 4</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://www.musiclights.it/images/tmp/600x600LUMIPIX16H.png?20210303113617" alt="Image">
+        <div class="slider__info">
+          <h2>LumiPix 16H</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://img.kytary.com/eshop_ie/stredni_v4x/na/636709832686300000/1896bc9f/64382694/chamsys-snakesys-r8-19-artnet-dmx-8-univ.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>CHAMSYS SnakeSys R8</h2>
+        </div>
+      </div>
+    </div>
+    <div class="slider__nav">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+  </div>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./js/main_page.js"></script>
+  
    <footer>
     <p id="footertext"></p>
 <small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>

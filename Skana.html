@@ -9,6 +9,10 @@
   <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
   <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  
+  <link rel="stylesheet" href="./css/main_page.css">
+  <link rel="stylesheet" href="styl.css">
+  <style>
 <style>
     body {
     background-image: linear-gradient(to right, rgba(200, 8,207, 0.75), rgba(28, 70, 184, 0.8)), url(https://www.allstaraudio.com/wp-content/uploads/2017/07/stage-setup-810x456.jpg);
@@ -71,6 +75,87 @@
        <img src="https://cdn-icons-png.flaticon.com/512/1411/1411126.png" alt="banner" width="500px">
      </div>
    </div>
+
+<br>
+<br>
+
+
+   <h1 style="text-align: center;">
+    Mūsu nomas piedāvājumā esošā skaņas tehnika:
+  </h1> <br>
+  
+  <div class="slider" x-data="{start: true, end: false}">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+  
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/DB_TECHNOLOGIES/DVX_D12_HP-4000x4000.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>DVX D12 HP</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/DB_TECHNOLOGIES/SUB_918-4000x4000w.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>DB TECHNOLOGIES SUB 918</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/ALLEN_and_HEATH/QU-32-4000x4000w.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>ALLEN & HEATH QU-32</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/DB_TECHNOLOGIES/Flexsys_FMX10-4000x4000w.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>DB TECHNOLOGIES FMX10</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/SHURE/BLX24RE/SM58_K14-4000x4000w.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>SHURE BLX24RE/SM58 K14</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/SHURE/BLX14E/SM31_K14-4000x4000w.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>SHURE BLX14E/SM31 K14</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/RODE/NT5MP-4000x4000.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>RODE NT5MP</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/Sennheiser/e_945-4000x4000.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>SENNHEISER e 945</h2>
+        </div>
+      </div>
+
+      <div class="slider__item">
+        <img class="slider__image" src="https://discomania.lv/image/cache/catalog/products/KandM/210/2-4000x4000h.jpg" alt="Image">
+        <div class="slider__info">
+          <h2>K&M 210/2</h2>
+        </div>
+      </div>
+      <!-- <div class="slider__item">
+        <img class="slider__image" src="" alt="Image">
+        <div class="slider__info">
+          <h2>Stairville LED Pixel Rail 40 RGB</h2>
+        </div>
+      </div> -->
+    </div>
+    <div class="slider__nav">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+  </div>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./js/main_page.js"></script>
 
    <footer>
     <p id="footertext"></p>
