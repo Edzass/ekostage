@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="css/gaisma.css">
   <title>Eko Stage- Sākumlapa</title>
   <link rel="icon" type="image/x-icon; " href="bildes/logo1.png">  <! -- Cilnes mazā bilde ––>
   <meta name="author" content="Edgars Mukāns">  <! -- Lapas autors -->
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+
   <link rel="stylesheet" href="./css/main_page.css">
   <link rel="stylesheet" href="styl.css">
   <style>
@@ -30,10 +32,13 @@
  <nav>
   <div class="navLinks"><ul>
     <li>
-      <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" >Eko <a style="font-family: Allerta Stencil; font-size: 45px; color: black;" href="index.html" >Stage
+      <div class="containerWrapper">
+      <div class="container1">
+      <span class="first-word"> <a href= "index.html"class="logo"  style="color: rgb(6, 250, 38);" > Eko</span>  <a style="font-family: Allerta Stencil; font-size: 45px; color: black;" href="index.html" ><span class="last-word" style=";">Stage</span>
                     </a> 
    </li></ul> </a></div>
-   
+
+  </div> </div>
    <!-- toggle menu button -->
    <span class="menubtn" onclick="openNav()">&#9776;</span>
  
@@ -50,6 +55,7 @@
      </ul>
    </div>
  </nav>
+
    <!-- responsive side navbar -->
    <div class="sideNav" id="sidenav">
     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
@@ -67,11 +73,13 @@
    <div class="row">
      <div class="column1">
        <h1></h1>
-       <p>Gaismošanas, skaņošanas un skatuves aprīkojuma nomas SMU uzņēmums “Eko stage”.
+
+       <p>Gaismošanas, skaņošanas un skatuves aprīkojuma nomas SMU uzņēmums “Eko stage”. 
         <br> Šis uzņēmums ir atšķirīgs ar galveno mērķi samazināt dabas pēdas nospiedumu veidojot (apgaismojot, apskaņojot, veidojot skatuvi) un organizējot pasākumus.
         </p>
        
      </div>
+    
      <div class="column2">
        <img src="Bildes/logo1.png" alt="banner" width="300px ">
      </div>
@@ -215,10 +223,10 @@
    <footer>
     <p id="footertext"></p>
 <small> <mark> Šī lapa ir veidota RAĢ Sociālo zinību projekta- "Uzņēmēdarbība sākas ar ideju" ietvaros. SMU-"Eko Stage"<a href="">  <u><b> <abbr title="TehnoEdgars Youtube lapa">   </abbr></b> </u></a>  </mark> </small> <br>
-<small>  <i> <b>   Visas tiesības ir aizsargātas.  </b> </i>  </small>
-<small> <em>  <b> <q> <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
+<small>  <i> <b>   <div style="text-align: right;"> Pēdējais lapas atjauninājums veikts - </i> 29.05.2023 <i> </i></div>  Visas tiesības ir aizsargātas.  </b> </i>  </small>
+<small> <em> <b>  <div style="text-align: left">   Latvija-  2023  </q> </b>  </em> </small>
 </footer>
-   
+    
    <!-- javascript to make side menu appear -->
  <script>
    function openNav() {

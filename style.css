@@ -241,7 +241,7 @@ opacity: 1.0; }
         }
 }
 
-/* Bumbas animacija*/
+/* Bumbas animacija- NAV*/
 #bumba
 {
     width: 40px;
@@ -254,7 +254,7 @@ opacity: 1.0; }
     top: 100px;
 }
 
-/* teksts plats 3gab*/
+/* teksts plats 3gab - index page*/
 
 
 .container{
@@ -353,7 +353,8 @@ opacity: 1.0; }
   color: #fff;
 
 }
-/* taissns*/
+
+/* __*/
 
 
 /*  Teksta rakstības animācija*/
@@ -385,6 +386,7 @@ opacity: 1.0; }
     border-color: transparent;
   }
 }
+
 /* hover effects*/
 .hover1 {
   --s: 0.1em; /* the thickness of the line */
@@ -419,6 +421,8 @@ opacity: 1.0; }
 .hover-1:hover {
   text-shadow: 0 -1.2em #000, 0 0 #1095c1;
 }
+
+
 /* alpline slider*/
 :root {
   --scrollcolor: #fff;
@@ -565,3 +569,5 @@ body {
   pointer-events: auto;
   cursor: pointer;
 }
+
+

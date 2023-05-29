@@ -184,3 +184,63 @@
     text-align: left;
     color: black;
   }
+
+
+
+
+  /* Text down to up*/
+  @import 
+  url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+  @keyframes loadInOpacity {
+    0% {
+      background: rgba(0, 0, 0, 0); 
+    }
+    100% {
+      background: #0F0F0F;
+    }
+  }
+   
+    .container_logo {
+      width: 449px;
+      height: 80px;
+      overflow: hidden;
+      position: relative; 
+    }
+
+
+    /* Teksts- Gaisma*/
+    .container_gaisma {
+      width: 449px;
+      height: 80px;
+      overflow: hidden;
+      position: relative; 
+    }
+    
+    
+    .container h1 {
+      
+    }
+    
+    .first-word-2 {
+      position: absolute;
+    
+      transform: translateY(80px);
+      animation: loadIn 0.5s ease 0.8s forwards;
+    }
+    
+    @keyframes loadIn {
+      0% {
+        transform: translateY(80px);
+      } 
+      100% {
+        transform: translateY(0px);
+      }
+    }
+    
+    .last-word {
+      position: absolute;
+      right: 0; 
+      transform: translateY(80px); 
+      animation: loadIn 0.5s ease 1.15s forwards;
+    }
+    
